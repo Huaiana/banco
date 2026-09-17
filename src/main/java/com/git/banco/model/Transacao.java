@@ -1,4 +1,4 @@
-package com.projeto.banco.model;
+package com.git.banco.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

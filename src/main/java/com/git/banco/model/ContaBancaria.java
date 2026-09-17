@@ -1,4 +1,4 @@
-package com.projeto.banco.model;
+package com.git.banco.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,21 +11,24 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Cliente {
+public class ContaBancaria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false, unique = true)
-    private String CPF;
-
-    @Column(nullable = false, unique = true)
-    private String email;
+    private String banco;
 
     @Column(nullable = false)
-    private String senha;
+    private String agencia;
+
+    @Column(nullable = false, unique = true)
+    private String numeroConta;
+
+    @Column(nullable = false)
+    private String tipoConta;
+
+    @Column(nullable = false)
+    private String saldo;
 }

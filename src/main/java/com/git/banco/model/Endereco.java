@@ -1,4 +1,4 @@
-package com.projeto.banco.model;
+package com.git.banco.model;
 
 public class Endereco {
     private String rua;
